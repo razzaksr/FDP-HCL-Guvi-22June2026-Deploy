@@ -33,4 +33,11 @@ const removeCampus = async(company) => {
     }
 }
 
-module.exports = {viewCampus, scheduleCampus, editCampus, removeCampus}
+const filterByPackage = async(package) => {
+    try{
+        const result = await corp.findOne({"package":{$gte:package}})
+        return result
+    }catch(err){return null}
+}
+
+module.exports = {viewCampus, scheduleCampus, editCampus, removeCampus, filterByPackage}
