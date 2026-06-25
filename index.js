@@ -9,7 +9,7 @@ app.use(parser.json())
 app.use('/api',dbApi)
 app.use('/auth',uApi)
 
-const PORT=2222
+const PORT=3000
 app.listen(PORT,()=>{
     console.log(`API Running @ ${PORT}`)
 })
