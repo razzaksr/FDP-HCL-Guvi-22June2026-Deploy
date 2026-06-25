@@ -1,13 +1,13 @@
-# @api = http://localhost:2222
+# @api = http://localhost:3000
 @api = https://fdp-corporate.onrender.com
 
 POST {{api}}/auth/register
 Content-Type: application/json
 
 {
-    "username":"manikandan",
-    "password":"mani",
-    "role":"student",
+    "username":"razak",
+    "password":"mohamed",
+    "role":"coordinator",
     "contact":4567654567
 }
 
